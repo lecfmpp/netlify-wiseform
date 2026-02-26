@@ -1,0 +1,15 @@
+
+# Netlify configuration for the reverse proxy site.
+# This site will proxy all requests to the main application.
+
+[build]
+  # This is a shell site, so no build command is needed.
+  # The `publish` directory points to the root of this proxy site.
+  publish = "proxy"
+
+[[redirects]]
+  # Proxy all incoming requests to your main application.
+  from = "/*"
+  to = "https://wisefunnel-v36.web.app/:splat"
+  status = 200
+  force = true
