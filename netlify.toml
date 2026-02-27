@@ -7,6 +7,6 @@
 [[redirects]]
   # Proxy all incoming requests to your main application.
   from = "/*"
-  to = "https://wisefunnel.io/:splat"
+  to = "https://wisefunnel-v36-69286814-e438f.web.app/:splat"
   status = 200
   force = true
